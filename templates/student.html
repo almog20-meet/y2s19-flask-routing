@@ -2,9 +2,20 @@
 <html>
 <head>
     <title>Student</title>
-	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+	<link 
+	rel="stylesheet" 
+	type="text/css" 
+	href="{{url_for('static',filename='style.css')}}">
+
 </head>
 <body>
-    <h1>This is the page for the student with id {{ id_number }}.</h1>
+	<a href="{{url_for('home')}}"> Home page </a>
+
+	<div>
+    <p>Name: {{student.name}}</p>
+    <p>Year {{student.year}} </p>
+    <p> Finished leb:{{student.finished_lab}} </p>
+	</div>
+
 </body>
 </html>
